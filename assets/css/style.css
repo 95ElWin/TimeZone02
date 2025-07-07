@@ -10,4 +10,6 @@ header{
 header .head-inner{
     width: 85%;
     margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
 }
