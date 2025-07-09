@@ -7,7 +7,7 @@ body{
     font-family: "Josefin Sans", sans-serif;
 }
 header{
-    padding: 36px 0px;
+    padding: 0px;
     background-color: white;
 }
 header .head-inner{
@@ -20,11 +20,14 @@ header .navbar{
     display: flex;
     column-gap: 36px;
 }
+header .navbar > li{
+    padding: 40px 0px;
+}
 header .navbar a{
     font-size: 16px;
     color: #141517;
     font-weight: 600;
-    transition: 0.3s;
+    transition: 0.3s color;
 }
 header .navbar a:hover{
     color: var(--red-500);
@@ -42,4 +45,32 @@ header .header-icons i{
 header .header-icons i:hover{
     color: var(--red-500);
     transform: scale(1.1);
+}
+header ul .dropdown-element{
+    position: relative;
+}
+header ul .dropdown-element:hover .dropdown{
+    visibility: visible;
+}
+header .dropdown{
+    min-width: 150px;
+    visibility: hidden;
+    top: 90px;
+    left: -20px;
+    position: absolute;
+    padding: 20px 16px;
+    background: white;
+    border-top: 2px solid var(--red-500);
+    border-radius: 12px 12px 4px 4px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+header .dropdown::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    transform: translateY(-101%);
+    border: 10px solid transparent;
+    border-bottom-color: var(--red-500);
 }
