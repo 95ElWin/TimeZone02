@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+:root{
+    --red-500:#ff2020;
+}
 body{
     background-color: #f0f0f2;
     font-family: "Josefin Sans", sans-serif;
@@ -12,4 +15,31 @@ header .head-inner{
     margin: 0px auto;
     display: flex;
     justify-content: space-between;
+}
+header .navbar{
+    display: flex;
+    column-gap: 36px;
+}
+header .navbar a{
+    font-size: 16px;
+    color: #141517;
+    font-weight: 600;
+    transition: 0.3s;
+}
+header .navbar a:hover{
+    color: var(--red-500);
+}
+header .header-icons{
+    display: flex;
+    column-gap: 30px;
+    color: #141517;
+    font-size: 18px;
+}
+header .header-icons i{
+    transition: 0.3s;
+    cursor: pointer;
+}
+header .header-icons i:hover{
+    color: var(--red-500);
+    transform: scale(1.1);
 }
