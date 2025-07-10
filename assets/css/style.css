@@ -71,6 +71,19 @@ header .dropdown::before{
     position: absolute;
     top: 0px;
     transform: translateY(-101%);
-    border: 10px solid transparent;
+    border: 8px solid transparent;
     border-bottom-color: var(--red-500);
+}
+header .navbar > li .status{
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    right: -50%;
+    padding: 4px 8px;
+    color: white;
+    background-color: var(--red-500);
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 600;
+    border-radius: 6px;
 }
