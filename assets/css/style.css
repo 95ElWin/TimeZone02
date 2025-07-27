@@ -1,116 +1,117 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-:root{
-    --red-500:#ff2020;
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+:root {
+  --red-500: #ff2020;
 }
-body{
-    background-color: #f0f0f2;
-    font-family: "Josefin Sans", sans-serif;
+body {
+  background-color: #f0f0f2;
+  font-family: "Josefin Sans", sans-serif;
 }
-header{
-    padding: 0px;
-    background-color: white;
+header {
+  padding: 0px;
+  background-color: white;
 }
-header .head-inner{
-    width: 85%;
-    margin: 0px auto;
-    display: flex;
-    justify-content: space-between;
+header .head-inner {
+  width: 85%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-header .navbar{
-    display: flex;
-    column-gap: 36px;
+header .navbar {
+  display: flex;
+  column-gap: 36px;
 }
-header .navbar > li{
-    padding: 40px 0px;
+header .navbar > li {
+  padding: 40px 0px;
 }
-header .navbar a{
-    font-size: 16px;
-    color: #141517;
-    font-weight: 600;
-    transition: 0.3s color;
+header .navbar a {
+  font-size: 16px;
+  color: #141517;
+  font-weight: 600;
+  transition: 0.3s color;
 }
-header .navbar a:hover{
-    color: var(--red-500);
+header .navbar a:hover {
+  color: var(--red-500);
 }
-header .header-icons{
-    display: flex;
-    column-gap: 30px;
-    color: #141517;
-    font-size: 18px;
+header .header-icons {
+  display: flex;
+  column-gap: 30px;
+  color: #141517;
+  font-size: 18px;
 }
-header .header-icons i{
-    transition: 0.3s;
-    cursor: pointer;
+header .header-icons i {
+  transition: 0.3s;
+  cursor: pointer;
 }
-header .header-icons i:hover{
-    color: var(--red-500);
-    transform: scale(1.1);
+header .header-icons i:hover {
+  color: var(--red-500);
+  transform: scale(1.1);
 }
-header ul .dropdown-element{
-    position: relative;
+header ul .dropdown-element {
+  position: relative;
 }
-header ul .dropdown-element:hover .dropdown{
-    visibility: visible;
+header ul .dropdown-element:hover .dropdown {
+  visibility: visible;
 }
-header .dropdown{
-    min-width: 150px;
-    visibility: hidden;
-    top: 90px;
-    left: -20px;
-    position: absolute;
-    padding: 20px 16px;
-    background: white;
-    border-top: 2px solid var(--red-500);
-    border-radius: 12px 12px 4px 4px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
+header .dropdown {
+  min-width: 150px;
+  visibility: hidden;
+  top: 90px;
+  left: -20px;
+  position: absolute;
+  padding: 20px 16px;
+  background: white;
+  border-top: 2px solid var(--red-500);
+  border-radius: 12px 12px 4px 4px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
 }
-header .dropdown::before{
-    content: "";
-    position: absolute;
-    top: 0px;
-    transform: translateY(-101%);
-    border: 8px solid transparent;
-    border-bottom-color: var(--red-500);
+header .dropdown::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  transform: translateY(-101%);
+  border: 8px solid transparent;
+  border-bottom-color: var(--red-500);
 }
-header .navbar > li .status{
-    display: inline-block;
-    position: absolute;
-    top: 20px;
-    right: -50%;
-    padding: 4px 8px;
-    color: white;
-    background-color: var(--red-500);
-    text-transform: uppercase;
-    font-size: 10px;
-    font-weight: 600;
-    border-radius: 6px;
+header .navbar > li .status {
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  right: -50%;
+  padding: 4px 8px;
+  color: white;
+  background-color: var(--red-500);
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 600;
+  border-radius: 6px;
 }
 /*------------------BANNER-------------------------*/
-.banner{
-    height: 100vh;
+.banner {
+  height: 100vh;
 }
-.banner-row{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    column-gap: 12px;
-    position: relative;
+.banner-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 12px;
+  position: relative;
 }
-.banner-row img{
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    transform: translateX(50%);
+.banner-row img {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  transform: translateX(50%);
 }
-.banner-text h1{
-    font-size: 96px;
-    color: #0b1c39;
+.banner-text h1 {
+  font-size: 96px;
+  color: #0b1c39;
 }
-.banner-text p{
-    width: 75%;
-    font-size: 17px;
-    color: #202025;
-    margin: 50px 0px;
+.banner-text p {
+  width: 75%;
+  font-size: 17px;
+  color: #202025;
+  margin: 50px 0px;
 }
