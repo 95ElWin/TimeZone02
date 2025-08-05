@@ -26,13 +26,15 @@ header .navbar {
 header .navbar > li {
   padding: 40px 0px;
 }
-header .navbar a {
+header .navbar a,
+header .navbar > li {
   font-size: 16px;
   color: #141517;
   font-weight: 600;
   transition: 0.3s color;
 }
-header .navbar a:hover {
+header .navbar a:hover,
+header .navbar > li:hover {
   color: var(--red-500);
 }
 header .header-icons {
@@ -81,7 +83,8 @@ header .navbar > li .status {
   display: inline-block;
   position: absolute;
   top: 20px;
-  right: -50%;
+  right: 0px;
+  transform: translateX(50%);
   padding: 4px 8px;
   color: white;
   background-color: var(--red-500);
@@ -141,9 +144,22 @@ header .navbar > li .status {
 @media screen and (max-width: 900px) {
   header {
     padding: 30px 0px;
+    position: relative;
   }
   header nav {
-    display: none;
+    position: absolute;
+    top: 90px;
+    width: 95%;
+    left: 20px;
+    background: white;
+    z-index: 100;
+    padding: 20px
+  }
+  header nav ul{
+    flex-direction: column;
+  }
+  header .navbar > li{
+    padding: 10px 0px;
   }
   header .toggle {
     display: inline-block;
@@ -157,5 +173,32 @@ header .navbar > li .status {
     font-size: 30px;
     color: var(--red-500);
     background: transparent;
+  }
+  header .navbar > li .status{
+    display: none;
+  }
+  header .dropdown {
+    top: 0px;
+    left: 0px;
+    position: relative;
+    padding: 20px 16px;
+    background: white;
+    border-top: none;
+    border-radius: none;
+    height: 0px;
+    padding: 0px;
+  }
+  header ul .dropdown-element i{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  header ul .dropdown-element:hover .dropdown {
+    visibility: visible;
+    height: auto;
+    padding: 20px 20px 0px;
+  }
+  header .dropdown::before {
+    display: none;
   }
 }
