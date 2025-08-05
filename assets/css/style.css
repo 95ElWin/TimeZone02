@@ -3,7 +3,6 @@
   --red-500: #ff2020;
 }
 body {
-  background-color: #f0f0f2;
   font-family: "Josefin Sans", sans-serif;
 }
 header {
@@ -91,6 +90,7 @@ header .navbar > li .status {
 /*------------------BANNER-------------------------*/
 .banner {
   height: 100vh;
+  background-color: #f0f0f2;
 }
 .banner-row {
   display: flex;
@@ -109,9 +109,37 @@ header .navbar > li .status {
   font-size: 96px;
   color: #0b1c39;
 }
+.banner-text{
+    width: 75%;
+}
 .banner-text p {
-  width: 75%;
   font-size: 17px;
   color: #202025;
   margin: 50px 0px;
+}
+@media screen and (max-width: 576px) {
+    .conainer{
+        width: 90%;
+    }
+    .banner{
+        height: 50vh;
+    }
+    .banner-text{
+        width: 100%;
+    }
+    .banner-row img{
+        display: none;
+    }
+    .banner-text h1 {
+        font-size: 36px;
+        color: #0b1c39;
+    }
+}
+@media screen and (max-width: 900px) {
+    header{
+        padding: 40px 0px;
+    }
+    header nav{
+        display: none;
+    }
 }
